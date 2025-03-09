@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmonias Cromáticas no Design Gráfico</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #FF5733;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #337BFF;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style-type: none;
+            margin-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        strong {
+            color: #FF5733;
+        }
+
+        .imagens {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .imagens img {
+            border-radius: 8px;
+        }
+
+        a {
+            color: #337BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Harmonias Cromáticas</h1>
+    </header>
+
+    <section id="introducao">
+        <h2>Inicio</h2>
+        <p><strong>Nome:</strong> Leandro de Faria Junior</p>
+        <p><strong>Harmonia Cromática Escolhida:</strong> Complementar</p>
+        <p><strong>Paleta de Cores Utilizada:</strong></p>
+        <ul>
+            <li>Cor 1: #FF5733 (RGB: 255, 87, 51) - Vermelho</li>
+            <li>Cor 2: #337BFF (RGB: 51, 123, 255) - Azul</li>
+            <li>Cor 3: #FFFF00 (RGB: 255, 255, 0) - Amarelo</li>
+        </ul>
+        <div class="imagem-container">
+            <img src="CirculoCromatico2.jpg" alt="Paleta de cores utilizada">
+        </div>
+    </section>
+
+    <section id="circulo-cromatico">
+        <h2>O que é o Círculo Cromático?</h2>
+        <p>O círculo cromático é uma representação visual das cores organizadas de acordo com sua relação entre si. Ele é usado no design para criar combinações harmoniosas.</p>
+        <div class="imagem-container">
+            <img src="data:image/jpeg;base64,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" alt="Círculo cromático">
+        </div>
+    </section>
+
+    <section id="harmonias">
+        <h2>Harmonias Cromáticas</h2>
+        <p>As harmonias cromáticas são combinações de cores baseadas no círculo cromático. Algumas das principais são:</p>
+        <ul>
+            <li><strong>Monocromática:</strong> Usa variações de uma única cor.</li>
+            <li><strong>Complementar:</strong> Combina cores opostas no círculo cromático.</li>
+            <li><strong>Análoga:</strong> Usa cores adjacentes no círculo cromático.</li>
+            <li><strong>Triádica:</strong> Combina três cores equidistantes no círculo cromático.</li>
+            <li><strong>Complementar Dividida:</strong> Combina uma cor com duas cores adjacentes à sua complementar.</li>
+            <li><strong>Quádrupla:</strong> Combina quatro cores equidistantes no círculo cromático.</li>
+        </ul>
+        <div class="imagens">
+            <figure>
+                <img src="https://laaquarela.wordpress.com/wp-content/uploads/2012/11/harmonia_monocromatica.jpg" alt="Harmonia Monocromática" width="200">
+                <figcaption>Harmonia Monocromática</figcaption>
+            </figure>
+            <figure>
+                <img src="https://blog.paulistacartoes.com.br/wp-content/uploads/2016/12/harmonia-complementar.jpg" alt="Harmonia Complementar" width="200">
+                <figcaption>Harmonia Complementar</figcaption>
+            </figure>
+            <figure>
+                <img src="https://www.jdv.com.br/wp-content/uploads/2020/04/imagem_1_-_circulo_cromatico.png" alt="Harmonia Análoga" width="200">
+                <figcaption>Harmonia Análoga</figcaption>
+            </figure>
+            <figure>
+                <img src="https://alphaultrapress.com.br/wp-content/uploads/2021/03/cores-triadicas.jpg" alt="Harmonia Triádica" width="200">
+                <figcaption>Harmonia Triádica</figcaption>
+            </figure>
+            <figure>
+                <img src="https://temporalcerebral.com.br/wp-content/uploads/2015/07/harmonia-das-cores-complementar-dividido-como-aplicar-no-design-grafico-circulo-cromatico-2.jpg" alt="Harmonia Complementar Dividida" width="200">
+                <figcaption>Harmonia Complementar Dividida</figcaption>
+            </figure>
+            <figure>
+                <img src="https://leticiatostes.com/wp-content/uploads/2019/07/cores-quadrado-harmc3b4nico.jpg" alt="Harmonia Quádrupla" width="200">
+                <figcaption>Harmonia Quádrupla</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section id="ferramentas">
+        <h2>Ferramentas para Escolher Paletas de Cores</h2>
+        <ul>
+            <li><a href="https://color.adobe.com" target="_blank">Adobe Color</a></li>
+            <li><a href="https://coolors.co" target="_blank">Coolors</a></li>
+            <li><a href="https://paletton.com" target="_blank">Paletton</a></li>
+            <li><a href="https://www.canva.com/colors/color-palettes/" target="_blank">Canva Colors</a></li>
+            <li><a href="https://colors.muz.li" target="_blank">Muzli Colors</a></li>
+            <li><a href="https://colormind.io" target="_blank">Colormind</a></li>
+        </ul>
+    </section>
+
+</body>
+</html>
